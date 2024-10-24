@@ -1,0 +1,46 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+body{
+    font-family: 'Arial';
+}
+
+div.circulo{
+    width: 50px;
+    height: 50px;
+    background-color: blueviolet;
+    border-radius: 50px;
+}
+
+div.circulo:first-child{
+    width: 400px;
+}
+
+section div:hover{
+    background-color: blue;
+}
+
+section div:first-child::before{
+    background-color: red;
+    width: 10px;
+    margin: 20px;
+    height: 10px;
+    content: '';
+    display: block;
+    border-radius: 10px;
+}
+
+section div:first-child::after{
+    background-color: black;
+    width: 10px;
+    margin: 20px;
+    height: 10px;
+    content: '';
+    display: block;
+    border-radius: 10px;
+}
+
+
+
